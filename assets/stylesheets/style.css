@@ -1,7 +1,27 @@
+* {
+    border: 1px solid red;
+}
+
 h1  {
   color: red;
 }
 body  {
 box-sizing: border-box;
-  border: 1px solid red;
+  background-color: black;
+}
+.jumbotron  {
+  height: 300px;
+  color: white;
+  /*background-image: url("../images/jeopardy__board.png");*/
+  /*margin-bottom: 0px;*/
+}
+#score  {
+  text-align: center;
+  margin: 30px;
+}
+.label_value  {
+  color: yellow;
+}
+#answer_returned  {
+    display: none;
 }
