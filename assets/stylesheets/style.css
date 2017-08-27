@@ -1,5 +1,5 @@
 * {
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     background-color: black;
     width: auto;
 }
@@ -7,9 +7,6 @@
   background-color: black;
 }
 
-/*h1  {
-  color: red;
-}*/
 container  {
   box-sizing: border-box;
   display: flex;
@@ -20,7 +17,6 @@ container  {
   height: 300px;
   color: white;
   /*background-image: url("../images/jeopardy__board.png");*/
-  /*margin-bottom: 0px;*/
 }
 #category, #value, #question, #submit, #newQuestion, #answer {
   text-align: center;
