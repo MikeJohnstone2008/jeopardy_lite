@@ -1,13 +1,20 @@
 * {
     border: 1px solid red;
+    background-color: black;
+    width: auto;
+}
+.div  {
+  background-color: black;
 }
 
-h1  {
+/*h1  {
   color: red;
-}
-body  {
-box-sizing: border-box;
-  background-color: black;
+}*/
+container  {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
 }
 .jumbotron  {
   height: 300px;
@@ -15,13 +22,37 @@ box-sizing: border-box;
   /*background-image: url("../images/jeopardy__board.png");*/
   /*margin-bottom: 0px;*/
 }
-#score  {
+#category, #value, #question, #submit, #newQuestion, #answer {
   text-align: center;
-  margin: 30px;
+  margin-top: 40px;
+  margin: auto;
+  width: 1200px;
+}
+#answer {
+  height: 131px;
+}
+.container  {
+  text-align: center;
 }
 .label_value  {
   color: yellow;
 }
 #answer_returned  {
     display: none;
+}
+#label_score  {
+  font-size: 40px;
+}
+#score_tl {
+  font-size: 50px;
+}
+#newQuestion  {
+  margin-bottom: 60px;
+}
+#score  {
+padding-bottom: 60px;
+text-align: center;
+margin-top: 40px;
+margin: auto;
+width: 1200px;
 }

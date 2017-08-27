@@ -24,34 +24,30 @@
           console.log(question)
           console.log(value)
           console.log(category)
-          console.log("total is now: " + total)
         })
       }
 
       getQuestion();
 
-      //Submit User Answer button click, basic-addon1, make visibility: visible
+      //button click, basic-addon1, make visibility: visible
       $("#basic-addon1" ).click(function() {
 
         submit_btn = $("#basic-addon1").val();
         $("#answer_returned").show();
 
-        // total = $("#score_tl").html(total);    what is this doing? We already have a parameter for total
+        $("#score_tl").html(total);
         console.log($("#userAnswer").val())
         if(answer.toLowerCase() === $("#userAnswer").val().toLowerCase()){
           total = total + value;
-          console.log("Total score is now: " + total)
-          $("#score_tl").html(total);  //total value is correct but not displaying to the UI == 0. It needed to be "html", not val.
           console.log("Correct: you rule--awsome!")
-// removed code
+          $("#userAnswer").val() = '';
         }else{
           console.log("Wrong!")
         }
       });
-      // Click Next Question button:
+      // $("")   button glick=-get next question
       $("#new_question" ).click(function() {
         $("#answer_returned").hide();
-        $("#userAnswer[placeholder]").val('your answer here');
         getQuestion();
       })
     })
